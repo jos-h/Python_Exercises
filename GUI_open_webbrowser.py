@@ -12,9 +12,8 @@ class Automate(QWidget):
 
 	def initUI(self):
 
-		self.wind_size = QWidget()
-		self.wind_size.setGeometry(300, 300, 250, 250)
-		self.wind_size.setWindowTitle("Open links")
+		self.setGeometry(300, 300, 250, 250)
+		self.setWindowTitle("Open links")
 		layout = QVBoxLayout()
 		label = QLabel("Start Automate")
 		start = QPushButton("Begin")
