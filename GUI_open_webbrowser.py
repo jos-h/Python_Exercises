@@ -3,7 +3,7 @@ from PySide.QtGui import *
 import sys
 import webbrowser
 
-class Automate(QWidget):
+class Automate(QDialog):
 
 	def __init__(self):
 		super(Automate, self).__init__()
@@ -12,9 +12,14 @@ class Automate(QWidget):
 
 	def initUI(self):
 
-		self.setGeometry(300, 300, 250, 250)
+		#self.setGeometry(300, 300, 250, 250)
+		'''
+			Disables resizing option 
+		'''
+		self.setFixedSize(315,275)
+
 		self.setWindowTitle("Open links")
-		layout = QVBoxLayout()
+		layout = QGridLayout()
 		label = QLabel("Start Automate")
 		start = QPushButton("Begin")
 		#textedit = QTextEdit()
@@ -22,8 +27,8 @@ class Automate(QWidget):
 		# scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
 		# scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
 		#layout.addWidget(textedit)
-		layout.addWidget(label)
-		layout.addWidget(start)
+		layout.addWidget(label,0,0)
+		layout.addWidget(start,0,1)
 		
 		# textedit.verticalScrollBar().setValue(textedit.verticalScrollBar().minimum()) 
 		self.setLayout(layout)
