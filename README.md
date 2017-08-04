@@ -1,5 +1,3 @@
 # Python_Exercises
-Small Exercises 
-New bie to python and indeed in love with python 
-Learning and explorin new modules in python and implementing them.
-
+Small Exercises + Various Assignments. I am python learner and developer and indeed in love with python 
+Learning and exploring new modules in python and implementing them.
