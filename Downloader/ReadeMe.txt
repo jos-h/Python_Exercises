@@ -1,0 +1,7 @@
+A small downloader to download files.
+
+Place the url in the text field and it will download the files.
+
+It takes one url at a time and downloads the file upto limited size.
+
+For heavy files it works slowly.
