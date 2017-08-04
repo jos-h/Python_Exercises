@@ -32,18 +32,22 @@ class Automate(QDialog):
 		
 		# textedit.verticalScrollBar().setValue(textedit.verticalScrollBar().minimum()) 
 		self.setLayout(layout)
+		start.clicked.connect(self.start_appli)
 
 	def start_appli(self):
 
 		try:
-			url = "www.google.com"
+			#url = "www.google.com"
 			ffpath = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 			webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(ffpath),1)
 			browser = webbrowser.get('chrome')
-			browser.open_new(url)
+			#browser.open_new(url)
 			#browser.open_new_tab('email.zensar.com')
 			url_tabs = ['www.google.com','email.zensar.com',
-					'https://mail.google.com/mail/','zenloungeplus.zensar.com']
+					'https://mail.google.com/mail/','zenloungeplus.zensar.com',
+					'https://github.com/jos-h/Python_Exercises',
+					'https://app.pluralsight.com/id',
+					'http://www.diveintopython3.net/']
 			for url_new_tabs in url_tabs:
 				browser.open_new_tab(url_new_tabs)
 		except Exception as e:
