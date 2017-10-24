@@ -37,14 +37,13 @@ class Automate(QDialog):
 	def start_appli(self):
 
 		try:
-			#url = "www.google.com"
-			ffpath = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+			ffpath = r'/usr/bin/google-chrome'
 			webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(ffpath),1)
 			browser = webbrowser.get('chrome')
 			#browser.open_new(url)
 			#browser.open_new_tab('email.zensar.com')
-			url_tabs = ['www.google.com','email.zensar.com',
-					'https://mail.google.com/mail/','zenloungeplus.zensar.com',
+			url_tabs = ['www.google.com',
+					'https://mail.google.com/mail/','www.youtube.com',
 					'https://github.com/jos-h/Python_Exercises',
 					'https://app.pluralsight.com/id',
 					'http://www.diveintopython3.net/']
