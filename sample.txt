@@ -1,0 +1,11 @@
+First of all, just getting to the theater presents difficulties. Leaving
+a home equipped with a TV and a video 27. And then there are the lines.
+9988990088.After hooking yourself to the end of a human chain, you worry
+about whether there will be enough tickets, whether you will get seats
+together, and whether many people will sneak into the line ahead of you.
+
+I understand that Python 2 lists are essentially C arrays, that they
+allocate a specific block of sequential memory; 123321but, do these
+pieces of memory actually 21 store the data that is in the list or do
+they simply point to another location in memory where the 9988774455
+actual data is stored
